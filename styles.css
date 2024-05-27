@@ -1,0 +1,110 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+#bft_control {
+    margin-bottom: 20px;
+}
+#bft_screen {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+#bft_list_container {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+.badge {
+    display: inline-block;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+}
+.badge-secondary {
+    background-color: #6c757d;
+}
+.badge-warning {
+    background-color: #ffc107;
+}
+.badge-success {
+    background-color: #28a745;
+}
+.badge-danger {
+    background-color: #dc3545;
+} */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+#main_container {
+    display: flex; /* Enables flexbox */
+    flex-direction: row; /* Aligns children horizontally */
+    align-items: start; /* Aligns items at the start of the flex container */
+    height: 100vh; /* Full viewport height */
+    margin-top: 20px;
+}
+
+#animation_container {
+    flex: 3; /* Allocates 3 parts of space for animation */
+    display: flex;
+    flex-direction: column; /* Aligns child elements vertically */
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Adds spacing between the containers */
+}
+
+#results_container {
+    flex: 2; /* Allocates 1 part of space for results */
+    overflow: auto; /* Allows scrolling if content overflows */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-aligns the items */
+}
+
+#bft_control {
+    margin-bottom: 20px;
+}
+
+#bft_screen {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    max-width: 100%; /* Ensures the canvas is responsive */
+    height: auto;
+}
+
+#bft_list_container {
+    max-height: 800px;
+    overflow-y: auto;
+    width: 100%; /* Ensures the list container takes full width of its parent */
+    margin-bottom: 20px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.badge-secondary {
+    background-color: #6c757d;
+}
+
+.badge-warning {
+    background-color: #ffc107;
+}
+
+.badge-success {
+    background-color: #28a745;
+}
+
+.badge-danger {
+    background-color: #dc3545;
+}

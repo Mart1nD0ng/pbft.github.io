@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBFT Animation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main_container" style="display: flex;">
+        <!-- Animation Container -->
+        <div id="animation_container">
+            <div id="bft_control">
+                <label for="bft_n">Number of Nodes: </label>
+                <input type="number" id="bft_n" value="4" min="1">
+                <label for="bft_m">Number of Byzantine Nodes: </label>
+                <input type="number" id="bft_m" value="1" min="0">
+                <label for="bft_faulty_proposer">Faulty Proposer</label>
+                <input type="checkbox" id="bft_faulty_proposer">
+                <label for="bft_allow_tampering">Allow Tampering</label>
+                <input type="checkbox" id="bft_allow_tampering">
+                <button id="bft_exec">Execute</button>
+                <br>
+                <label for="animation_speed">Animation Speed: </label>
+                <input type="range" id="animation_speed" min="1" max="20" value="10">
+            </div>
+            <canvas id="bft_screen" width="800" height="800"></canvas>
+            <div id="bft_description"></div>
+        </div>
+
+        <!-- Results Container -->
+        <div id="results_container">
+            <div id="bft_list_container">
+                <table id="bft_list">
+                    <thead>
+                        <tr>
+                            <th>Node</th>
+                            <th>Messages</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- 表格内容将通过JavaScript动态生成 -->
+                    </tbody>
+                </table>
+            </div>
+            <div id="bft_conclusion" class="badge"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
