@@ -23,7 +23,7 @@
   var malice = loadImage("pbft/malice.png");
 
   var timer = null;
-  const baseFPS = 60.0; // Constant FPS for all speeds
+  const baseFPS = 144.0; // Constant FPS for all speeds
 
   function exec(){
       if(timer != null){
